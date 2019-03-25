@@ -199,6 +199,10 @@ hr {
      background: blue;
 }
 
+header {
+display: flex;
+}
+
  header nav a {
  display: inline;
  
@@ -217,9 +221,9 @@ margin: 0px 200px;
 display: none;
 }
 
+
 .middle-img {
 width: 90%;
-margin-bottom: 50px;
 
 }
 
