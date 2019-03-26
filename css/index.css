@@ -29,7 +29,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: inline-block;
+	display: block;
 }
 body {
 	line-height: 1;
@@ -66,193 +66,254 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-
-/* Your code starts here!  */
-
-/* html {
-	box-sizing: border-box;
-  } */
-  
-  body {
-  padding: 0 0 0 100px;
-  }
-
-  *,
-  *:before,
-  *:after {
-	box-sizing: inherit;
-  }
-  
-  .info {
-  display: flex;
-  }
-  
-  header {
-	margin-bottom: 67px;
-  }
-  
-  nav,
-  nav a,
-  .logo,
-  .highlight {
-	display: inline-block;
-  }
-  
-  nav a {
-	text-decoration: none;
-	color: silver;
-	margin: 30px 0 0 60px;
-	vertical-align: middle;
-	font-size: 17px;
-  }
-  
-  /* nav a:first-child {
-	margin-left: 10px;
-  } */
-  
-  .highlight {
-	vertical-align: top;
-	margin: 104px 104px 104px 140px;
-	text-align: center;
-  }
-
-  .container {
-    max-width: auto;
-  }
-  
-  .highlight-img {
-	padding: 64px 64px 64px 100px;
-	line-height: 55px;
-	margin: 0 0 120px 120px;
-  }
-  
-  .logo {
-	padding: 20px;
-	margin: 25px 20px 0 300px;
-	vertical-align: middle;
-  }
-  
-  h1 {
-	font-size: 70px;
-  }
-  
-  button {
-	border-color: black;
-	width: 155px;
-	height: 29px;
-	font-size: 15px;
-  }
-  
-  .first-row,
-  .second-row {
-	padding: 40px;
-  }
-
-  .first-row p {
-   padding: 20px 20px 20px 0;
-  }
-
-  .second-row p {
-	padding: 20px 20px 20px 0;
-   }
-  
-
-  .features,
-  .about {
-	display: inline-block;
-	width: 49.5%;
-  }
-
-  .middle-img {
-	padding: 40px;
-	width: 1200px;
-  }
-  
-  .services,
-  .product,
-  .vision {
-	display: inline-block;
-	width: 33%;
-  }
-  
-  footer {
-	margin-top: 40px;
-	margin-left: 40px;
-  }
-  
-  .copyright p {
-	text-align: center;
-	padding: 30px;
-	margin-left: 450px;
-  }
-hr {
-  width: 1200px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  margin-top: 40px;
+.container {
+    width: 880px;
+    margin: auto;
 }
 
-
-  /* tablet css */
- @media(max-width: 800px) {
- .container {
-     background: blue;
-}
+/* Header Styles */
 
 header {
-display: flex;
+    width: 100%;
+    display: flex;
 }
 
- header nav a {
- display: inline;
- 
- margin-left: 50px;
-}
-
-.logo {
- margin: 0 230px;
-}
-
-.highlight {
-margin: 0px 200px;
-}
-
-.highlight-img {
-display: none;
-}
-
-
-.middle-img {
-width: 90%;
-
-}
-
-     
-}
-
- 
-
-
-
-
-
- /* Phone css */
-@media(max-width: 500px) {
-.container {
-    background: pink;
+header nav {
+    margin-top: 40px; 
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
 }
 
 header nav a {
- display: flex;
- flex-direction: column;
- justify-content: center;
- padding-left: 100px;
+    text-decoration: none;
+    color: #b0b0b0;
 }
 
-.logo {
-margin: 30px 90px;
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
 
+header .logo {
+    margin: 28px 0 0 91px;
+}
+
+/* Call To Action (CTA) Styles */
+
+.getting-started {
+    display: flex;
+    margin-top: 72px;
+    justify-content: flex-end;
+}
+
+.getting-started .getting-started-text {
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 82px 0 0;
+}
+
+.getting-started .getting-started-text button {
+    border: 1px double black;
+    font-size: 16px;
+    background: white;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.getting-started .getting-started-text button:hover {
+    background: black;
+    color: white;
+}
+
+/* Main Content Styles */
+
+.main-content {
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 75px 0 35px 0;
+   padding: 35px 0;
+   font-size: 16px;
+   line-height: 18px;
+}
+
+.main-content .top-content {
+    display: flex;
+}
+
+.main-content .middle-img {
+    display: block;
+    margin: 30px auto;
+}
+
+.main-content .bottom-content {
+    display: flex;
+}
+
+.main-content .bottom-content p {
+    padding-right: 20px;
+}
+
+/* Contact Styles */
+
+.contact p {
+    margin: 15px 0;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+
+/* tablet css here */
+@media(max-width: 800px) {
+
+.container {
+width: 100%;
+}
+
+header {
+flex-wrap: wrap;
+}
+
+header nav {
+width: 780px;
+padding: 0 40px;
+}
+
+header .logo {
+order: -1;
+margin: 20px auto;
+}
+
+.getting-started {
+justify-content: center;
+padding: 0 10px;
+}
+
+.getting-started .getting-started-text {
+margin: auto;
+}
+
+.getting-started img {
+display: none;
+}
+
+.text-content {
+padding: 0 30px;
+}
+
+.middle-img {
+width: 95%;
+}
+
+.contact {
+padding-left: 30px;
+}
+
+footer {
+padding-bottom: 15px;
 }
 
 }
+
+
+
+/* mobile css here */
+@media(max-width: 500px) { 
+
+.container {
+width: 100%;
+}
+
+header nav{
+flex-direction: column;
+margin: 0;
+padding: 0;
+}
+
+header nav a {
+text-align: center;
+font-size: 20px;
+border: 1px solid grey;
+padding: 8px 0;
+}
+
+.top-content {
+flex-wrap: wrap;
+flex-direction: column;
+}
+
+.bottom-content {
+flex-wrap: wrap;
+flex-direction: column;   
+}
+
+.middle-img {
+width: 88%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
