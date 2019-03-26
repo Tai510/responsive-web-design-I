@@ -99,7 +99,7 @@ header .logo {
     margin: 28px 0 0 91px;
 }
 
-/* Call To Action (CTA) Styles */
+/* start css here */
 
 .getting-started {
     display: flex;
@@ -188,7 +188,7 @@ flex-wrap: wrap;
 
 header nav {
 width: 780px;
-padding: 0 40px;
+padding: 0 30px;
 }
 
 header .logo {
@@ -196,9 +196,14 @@ order: -1;
 margin: 20px auto;
 }
 
+.main-content {
+margin: 0 15px;
+}
+
 .getting-started {
 justify-content: center;
 padding: 0 10px;
+padding-bottom: 80px;
 }
 
 .getting-started .getting-started-text {
@@ -210,14 +215,15 @@ display: none;
 }
 
 .text-content {
-padding: 0 30px;
+padding: 0 15px;
 }
 
 .middle-img {
-width: 95%;
+width: 100%;
 }
 
 .contact {
+padding-top: 30px;
 padding-left: 30px;
 }
 
